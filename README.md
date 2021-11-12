@@ -14,3 +14,5 @@ Ana: Imagens, cores e design <br />
 Um site contendo 6 páginas html, css e js, para o seminário da disciplina "Laboratório de Programação II" <br />
 Sendo então o tema escolhido a loja "LUV TULIP STORE" propriedade de Ana Clara de Andrade Silva. <br />
 Ainda em desenvolvimento.
+
+## Crated by FIRMA LTDA. & Ana Clara
