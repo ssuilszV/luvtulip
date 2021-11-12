@@ -4,11 +4,13 @@ This is a site created by: Bruno Ferrari Lacerra, Henrique Gonçalves, Luis Henr
 ## Team
 Luis: "Cadastre-se" Page <br />
 Henrique: "Login" Page <br />
-Paulo: Estrutura HTML & JS <br />
-Bruno: Estrutura HTML & JS <br />
+Paulo: Estrutura HTML & JS and "Monte o seu" <br />
+Bruno: Estrutura HTML & JS and Homepage <br />
 Pedro: "Reclamações" Page <br />
-Ana:... <br />
+Ana: Imagens, cores e design <br />
 
 ## Objetivo
 
-Criar um site para trabalhos escolares, o "tema" para o site escolhido foi uma loja de missangas.
+Um site contendo 6 páginas html, css e js, para o seminário da disciplina "Laboratório de Programação II" <br />
+Sendo então o tema escolhido a loja "LUV TULIP STORE" propriedade de Ana Clara de Andrade Silva. <br />
+Ainda em desenvolvimento.
