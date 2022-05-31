@@ -4,8 +4,8 @@ This is a site created by: Bruno Ferrari Lacerra, Henrique Gonçalves, Luis Henr
 ## Team
 Luis: "Cadastre-se" Page <br />
 Henrique: "Login" Page <br />
-Paulo: Estrutura HTML & JS and "Monte o seu" <br />
-Bruno: Estrutura HTML & JS and Homepage <br />
+Paulo: Estrutura HTML & JS<br />
+Bruno: Estrutura HTML & JS and Homepage and "Monte o seu"<br />
 Pedro: "Reclamações" Page <br />
 Ana: Imagens, cores e design <br />
 
