@@ -15,6 +15,5 @@ Bruno @BrunoFerrariIFTM: Estrutura HTML & JS | "Monte o seu" (Page1) and "Produt
 
 Um site contendo 6 páginas html, css e js, para o seminário da disciplina "Laboratório de Programação II" <br />
 Sendo então o tema escolhido a loja "LUV TULIP STORE" propriedade de Ana Clara de Andrade Silva. <br />
-Término em andamento.
 
 ## Crated by FIRMA LTDA. & Ana Clara
