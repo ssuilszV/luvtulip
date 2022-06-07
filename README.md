@@ -8,7 +8,7 @@ Henrique @HenriqGitHub: "Login" (Page5) | JavaScript login configuration (passwo
 <br/>
 Paulo @sorahed : Estrutura completa HTML & completa JS | "Reclamações" (Page3)<br />
 <br/>
-Bruno @BrunoFerrariIFTM: Estrutura HTML & JS | "Monte o seu" (Page1) and "Produtos" (Page2).<br />
+Bruno @futoibrunao : Estrutura HTML & JS | "Monte o seu" (Page1) and "Produtos" (Page2).<br />
 <br/>
 
 ## Objetivo
