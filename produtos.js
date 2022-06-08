@@ -17,6 +17,9 @@ function busca(){
         if(x == 40){
             document.getElementById("href").href= "#tornozeleiras"
         }
+        if(x == 50){
+          document.getElementById("href").href= "#strap"
+      }
     }
     
 }
