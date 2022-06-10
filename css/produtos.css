@@ -15,7 +15,10 @@ html {
       display: flex;
     }
     #textcaixa{
-      width: auto;
+      width: flex;
+    }
+    a{
+      font-size: 0.9em;
     }
 }
 
@@ -90,4 +93,17 @@ html {
     background: linear-gradient(to right, green, 	#32CD32);
   
   }
+
+  .copyright{
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+.button{
+  background-color: lightcoral;
+  }
+  .button:hover{
+    background-color: #CD5C5C;
+  }
+  
   

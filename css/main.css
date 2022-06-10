@@ -1,6 +1,8 @@
 @charset "UTF-8";
-
-
+@font-face {
+  font-family: chewy;
+  src: url(Chewy-Regular.ttf);
+}
 .testimonial-slider-container {
   padding: 1rem 1rem;
 }
@@ -83,15 +85,31 @@ body{
     background-color: #FFE2E2;
 }
 #containerpromocao{
-    background-color: #D18A8A;
-    padding: 20px;
+  background-color: lightcoral;
+  padding: 20px;
 }
 #conteinertitulo{
-    margin-top: 1em;
-    font-size: 3em;
+    margin-top: 0.5em;
+    font-size: 4em;
+    text-align: center;
+    font-family: chewy;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: 	#CD853F;
 }
-#containertexto{
-    font-size: 1.2em;
+.containertexto{
+  text-align: center;
+    font-size: 1.3em;
+    color: white;
+}
+#buttonpromo{
+  border: 2px solid #FFE2E2;
+  color: #FFE2E2;
+}
+#buttonpromo:hover{
+  background-color: #FFE2E2;
+  border: 2px solid #FFE2E2;
+  color: #D18A8A;
 }
 
 
@@ -122,6 +140,9 @@ body{
       width: auto;
       margin-left: 0px;
       margin-top: 40px;
+    }
+    a{
+      font-size: 0.9em;
     }
 }
 @media (min-width: 768px){
@@ -164,4 +185,11 @@ body{
 .social-field-wpp{
   background: linear-gradient(to right, green, 	#32CD32);
 
+}
+
+.button{
+background-color: lightcoral;
+}
+.button:hover{
+  background-color: #CD5C5C;
 }
