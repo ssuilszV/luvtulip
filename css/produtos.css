@@ -1,0 +1,109 @@
+.busca{
+  display: inline-block;
+}
+body{
+    background-color: #FFE2E2;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  #textcaixa{
+    width: 350px;
+  }
+  @media (max-width: 768px) {
+    .busca{
+      display: flex;
+    }
+    #textcaixa{
+      width: flex;
+    }
+    a{
+      font-size: 0.9em;
+    }
+}
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+  }
+  
+  .logo{
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 0px;;
+  }
+  .social-field{
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    width: 80%;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+      .social-field{
+        width: auto;
+        font-size: 1.2rem;
+      }
+      .logo{
+        width: auto;
+        margin-left: 0px;
+        margin-top: 40px;
+      }
+  }
+  @media (min-width: 768px){
+    p{
+      font-size: 1.3em;
+  }
+  }
+  
+  .social-field a i{
+    margin: 0 0.5rem;
+    width: 15px;
+  }
+  
+  .social-field a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .social-field-media{
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 2px;
+  }
+  
+  .social-field-instagram{
+    background: linear-gradient(to right, #FF8C00, #FF0000, #EE82EE, #DA70D6, #87CEEB);
+   
+  }
+  
+  .social-field-shopee{
+    background: linear-gradient(to right,#FF4500, 	#FFA500  );
+   
+  }
+  
+  .social-field-facebook{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+  
+  }
+  .social-field-wpp{
+    background: linear-gradient(to right, green, 	#32CD32);
+  
+  }
+
+  .copyright{
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+.button{
+  background-color: lightcoral;
+  }
+  .button:hover{
+    background-color: #CD5C5C;
+  }
+  
+  

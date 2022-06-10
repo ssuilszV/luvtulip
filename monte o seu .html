@@ -1,0 +1,849 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/monte o seu.css">
+
+  <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <button class="button big  hollow" onclick="topFunction()" id="myBtn" title="Go to top">Voltar para o topo</button>
+  <div class="title-bar" data-responsive-toggle="mainNavigation" data-hide-for="medium">
+    <div class="title-bar-left">
+      <button class="menu-icon" type="button" data-toggle="mainNavigation"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="title-bar-right">
+      Monte o Seu
+    </div>
+  </div>
+
+  <div class="top-bar" id="mainNavigation">
+    <div class="top-bar-left">
+      <ul class="menu vertical medium-horizontal">
+        <li><a href="main.html">Luv Tulip Store</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a class="menu-text hide-for-small-only">Monte o seu</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu vertical medium-horizontal">
+        <li><a href="reclame.html">Reclame Aqui</a></li>
+        <li>&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="login.html">Login</a></li>
+        <li class="menu-text hide-for-small-only">ou</li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </div>
+  </div>
+  <h1 align="center">Monte o seu</h1>
+  <div class="grid-x align-bottom">
+
+  </div>
+  <article class="grid conteiner">
+
+    <div class="row">
+      <div class="columns">
+        <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">UPLOAD</a></li>
+          <li class="tabs-title"><a href="#panel2">NOME</a></li>
+          <li class="tabs-title"><a href="#panel3">TAMANHO E FORMATO</a></li>
+          <li class="tabs-title"><a href="#panel4">MIÇANGAS</a></li>
+          <li class="tabs-title"><a href="#panel5">DISPOSIÇÃO DE ELEMENTOS</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <h2>UPLOAD</h2>
+            <p>Caso você já tenha um modelo que deseja em foto, faça o upload dela aqui: (Você pode escolher o
+              tamanho dela depois).</p>
+            <form method="post" enctype="multipart/form-data">
+              <div class="nome">
+                <label for="upload" class="button expanded" id="buttonupload">Faça o Upload do arquivo</label>
+                <input type="file" name="imagem" id="upload" class="show-for-sr" onchange="previewImg()">
+              </div>
+
+              <img class="thumbnail" id="fotoupload" src="images\monte o seu\prefix.png" alt=""><br>
+              <a href="" class="button expanded" id="buttonupload">Enviar</a><br>
+
+            </form>
+
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <h2>NOME</h2>
+            <p>Você deseja que sua miçanga tenha uma palavra escrito?</p>
+            <input type="radio" onclick="javascript:simNaoCheck();" name="simNao" id="selecionaSim"> SIM<br>
+            <input type="radio" onclick="javascript:simNaoCheck();" name="simNao" id="noCheck"> NÃO
+            <div class="nome" id="seSim" style="display:none">
+              <p>Digite o nome que você deseja colocar em sua miçanga: </p><input type="text" id="nome" placeholder="Digite o nome de sua escolha">
+            </div>
+
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <div id="opcoes">
+            <h2>TAMANHO E FORMATO</h2>
+            <p>Qual o tipo de miçanga você deseja montar?</p>
+              <input type="radio" onclick="javascript:tipo();" name="tipo" id="pulseira"><label for="pulseira">Pulseiras</label>
+              <input type="radio" onclick="javascript:tipo();" name="tipo" id="colar"><label for="colar">Colares</label>
+              <input type="radio" onclick="javascript:tipo();" name="tipo" id="anel"><label for="anel">Anéis</label><br>
+              <input type="radio" onclick="javascript:tipo();" name="tipo" id="torno"><label for="torno">Tornozeleiras</label>
+              <input type="radio" onclick="javascript:tipo();" name="tipo" id="strap"><label for="strap">Strap Phones</label>
+              
+              
+              
+            </div>
+            <br><br>
+            <div id="pulsebox" style="display:none">
+              <h2>PULSEIRA</h2>
+              <h3>Como medir?</h3>
+              <p>Com um barbante envolva a superfície do seu pulso na qual você quer usar a pulseira. Após isso, faça a medição da circunferência com uma régua e informe o valor (cm).</p>
+              <input type="radio" id="pulseirap"><label for="pulseirap">P = 16CM.</label><br>
+              <input type="radio" id="pulseiram"><label for="pulseiram">M = 18CM.</label><br>
+              <input type="radio" id="pulseirag"><label for="pulseirag">G = 19,5CM.</label><br>
+              <input type="radio" id="pulseiragg"><label for="pulseiragg">GG = 20,5CM.</label>
+              <p>Ou informe um tamanho específico</p>
+              <div class="nome">
+                <input type="text" placeholder="Digite o tamanho que você deseja">
+              </div>
+            </div>
+
+            <div id="colarbox" style="display:none">
+              <h2>COLAR</h2>
+              <h3>Como medir?</h3>
+              <p>Com um barbante envolva seu pescoço. Após isso, faça a medição da circunferência e informe o valor (cm).</p>
+              <input type="text" placeholder="Digite o tamanho que você deseja">
+              <p>Você também pode escolher valores padronizados selecionando uma das opões abaixo:</p>
+              <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar1.jfif">
+                  <input type="radio" id="choker"><label for="choker">Choker</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar2.jfif">
+                  <input type="radio" id="colarsize1"><label for="colarsize1">Colar Curto</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar3.jfif">
+                  <input type="radio" id="colarsize2"><label for="colarsize2">Colar Médio</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar4.jfif">
+                  <input type="radio" id="colarsize3"><label for="colarsize3">Colar Grande</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar5.jfif">
+                  <input type="radio" id="colarsize4"><label for="colarsize4">Ópera</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\colar6.jfif">
+                  <input type="radio" id="colarsize5"><label for="colarsize5">Corda</label>
+                </div>
+              </div>
+              
+            </div>
+            <div id="anelbox" style="display:none">
+              <h2>ANEL</h2>
+              <p>Com um barbante, linha ou arame, envolva seu dedo com o material, corte-a e meça com uma régua.
+              </p>
+              <table class="hover">
+                <thead>
+                  <tr>
+                    <th width="1">Medida em cm</th>
+                    <th width="1">Tamanho do Anel</th>
+                    <th width="1"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>4,3</td>
+                    <td>3</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+                  </tr>
+                  <tr>
+                    <td>4,6</td>
+                    <td>6</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>4,9</td>
+                    <td>9</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>5,2</td>
+                    <td>12</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>5,5</td>
+                    <td>15</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>5,8</td>
+                    <td>18</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>6,1</td>
+                    <td>21</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>6,4</td>
+                    <td>24</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>6,7</td>
+                    <td>27</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>30</td>
+                    <td><button class="button" style="margin-bottom: -3px;">Selecionar</button></td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="tornobox" style="display:none">
+              <h2>TORNOZELEIRA</h2>
+              <h3>Como medir?</h3>
+              <p>Com um barbante envolva a superfície do tornozelo na qual você quer usar a Tornozeleira. Após isso, faça a medição da circunferência com uma régua e informe o valor (cm).</p>
+              <input type="radio" id="pulseirap"><label for="pulseirap">P = 18CM.</label><br>
+              <input type="radio" id="pulseiram"><label for="pulseiram">M = 21CM.</label><br>
+              <input type="radio" id="pulseirag"><label for="pulseirag">G = 23CM.</label><br>
+              <input type="radio" id="pulseiragg"><label for="pulseiragg">GG = 24,5CM.</label>
+              <p>Ou informe um valor específico:</p>
+              <div class="nome">
+                <input type="text" placeholder="Digite o tamanho que você deseja">
+              </div>
+            </div>
+            <div id="strapbox" style="display:none">
+              <h2>STRAP PHONE</h2>
+              <p>Você deseja comprar apenas o Strap Phone também uma capinha?</p>
+              <input type="radio" onclick="capinha();" id="capinhasim" name="capinha"><label for="capinhasim">Incluso Capinha</label><br>
+              <input type="radio" onclick="capinha();" id="capinhanao" name="capinha"><label for="capinhanao">Apenas o Strap Phone</label><br>
+
+              <div id="capinhacontent" style="display: none;">
+                <div class="nome">
+                <select name="selectcapinha" id="selectcapinha" onchange="capinhachoice();">
+                  <option value="0">Informe o modelo do seu celular</option>
+                  <option value="Moto G4">Moto G4</option>
+                  <option value="Moto G7">Moto G7</option>
+                  <option value="Iphone X">Iphone X</option>
+                  <option value="Redmi Note 7">Redmi Note 7</option>
+                  <option value="Redmi Note 8 Pro">Redmi Note 8 Pro</option>
+                  <option value="Samsung Galaxy S20">Samsung Galaxy S20</option>
+                  <option value="Samsung Galaxy A11">Samsung Galaxy A11</option>
+                  <option value="Xiaomi Poco X3 NFC">Xiaomi Poco X3 NFC</option>
+                  <option value="Google Pixel 4">Google Pixel 4</option>
+                  <option value="Samsung Galaxy A01 Core">Samsung Galaxy A01 Core</option>
+                  <option value="Iphone 8 Plus">Iphone 8 Plus</option>
+                  <option value="Redmi Note 9">Redmi Note 9</option>
+                  <option value="Iphone SE">Iphone SE</option>
+                  <option value="Iphone 11">Iphone 11</option>
+                  <option value="Samsung Galaxy M62">Samsung Galaxy M62</option>
+                </select>
+              </div>
+            </div>
+            <div id="capinha2" style="display: none;">
+                <h3 style="text-align: center;">Capinha</h3>
+                <p id="textcapinha"></p>
+
+                <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa1.jpg">
+                    <select name="capa1" id="capa1">
+                      <option value="0">Simple Multicolor</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Rosa</option>
+                      <option value="5">Roxo</option>
+                      <option value="6">Branco</option>
+                      <option value="7">Preto</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa2.jpg">
+                    <select name="capa2" id="capa2">
+                      <option value="0">Metadinha Love</option>
+                      <option value="1">Lo</option>
+                      <option value="2">Ve</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa3.png">
+                    <input type="radio" id="capa3" name="capa"><label for="capa3">Melancia</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa4.jpg">
+                    <input type="radio" id="capa4" name="capa"><label for="capa4">Lilo & Stitch</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa5.png">
+                    <input type="radio" id="capa5" name="capa"><label for="capa5">Donut Cobertura</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa6.jpg">
+                    <input type="radio" id="capa6" name="capa"><label for="capa6">Florido com nome</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa7.jpg">
+                    <input type="radio" id="capa7" name="capa"><label for="capa7">Planetas</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa8.jpg">
+                    <input type="radio" id="capa8" name="capa"><label for="capa8">Ondas do Mar</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa9.jpg">
+                    <input type="radio" id="capa9" name="capa"><label for="capa9">Céu Estrelado</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa10.png">
+                    <input type="radio" id="capa10" name="capa"><label for="capa10">Girl Power</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa11.jpg">
+                    <input type="radio" id="capa11" name="capa"><label for="capa11">Modern Grey</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\capa12.jpg">
+                    <input type="radio" id="capa12" name="capa"><label for="capa12">Cactos com nome</label>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="tabs-panel" id="panel4">
+            <h2>MIÇANGAS</h2>
+            <div id="linha">
+            <h3 style="text-align: center;">Linha</h3>
+              <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha1.jpg">
+                  <input type="radio" id="first" name="linha"><label for="first">Dourada</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha2.jpg">
+                  <input type="radio" id="second" name="linha"><label for="second">White</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha3.jfif">
+                  <input type="radio" id="tree" name="linha"><label for="tree">Black</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha4.jpg">
+                  <input type="radio" id="for" name="linha"><label for="for">Vermelha</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha5.jpg">
+                  <input type="radio" id="five" name="linha"><label for="five">Multicolor</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\linha6.jpg">
+                  <input type="radio" id="six" name="linha"><label for="six">Verde</label>
+                </div>
+              </div>
+            </div>
+          
+            <div id="base">
+              <h3 style="text-align: center;">Base</h3>
+              <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base1.jpg">
+                  <select name="base" id="base1">
+                    <option value="0">Pérola Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Vermelho</option>
+                    <option value="4">Rosa</option>
+                    <option value="5">Roxo</option>
+                    <option value="6">Branco</option>
+                    <option value="7">Preto</option>
+                    <option value="8">Amarelo</option>
+                    <option value="9">Dourado</option>
+                    <option value="10">Cinza</option>
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base2.jpg">
+                  <select name="base" id="base2">
+                    <option value="0">Cream Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Vermelho</option>
+                    <option value="4">Rosa</option>
+                    <option value="5">Roxo</option>
+                    <option value="6">Branco</option>
+                    <option value="7">Preto</option>
+                    <option value="8">Amarelo</option>
+                    <option value="9">Dourado</option>
+                    <option value="10">Cinza</option>
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base3.jfif">
+                  <select name="base" id="base3">
+                    <option value="0">Metal Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Roxo</option>
+                    <option value="4">Preto</option>
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base4.jpg">
+                  <select name="base" id="base4">
+                    <option value="0">Basic Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Vermelho</option>
+                    <option value="4">Rosa</option>
+                    <option value="5">Roxo</option>
+                    <option value="6">Branco</option>
+                    <option value="7">Preto</option>
+                    <option value="8">Amarelo</option>
+                    <option value="9">Dourado</option>
+                    <option value="10">Cinza</option>
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base5.jfif">
+                  <select name="base" id="base5">
+                    <option value="0">Creamy Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Rosa</option>
+                    <option value="4">Branco</option>
+                    <option value="5">Amarelo</option>
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base6.jfif">
+                  <select name="base" id="base6">
+                    <option value="0">Heart Multicolor</option>
+                    <option value="1">Azul</option>
+                    <option value="2">Verde</option>
+                    <option value="3">Vermelho</option>
+                    <option value="4">Rosa</option>
+                    <option value="5">Roxo</option>
+                    <option value="6">Amarelo</option>
+                    <option value="7">Laranja</option>
+
+                  </select>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base7.jfif">
+                  <input type="checkbox" id="firstbase" name="base"><label for="firstbase">Red and Yellow</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base8.jpg">
+                  <input type="checkbox" id="secondfirstbase" name="base"><label for="secondfirstbase">Basic Golden</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base9.jfif">
+                  <input type="checkbox" id="treefirstbase" name="base"><label for="treefirstbase">Black Piano</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base10.jfif">
+                  <input type="checkbox" id="forfirstbase" name="base"><label for="forfirstbase">Crystal</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base11.jpeg">
+                  <input type="checkbox" id="fivefirstbase" name="base"><label for="fivefirstbase">Black and White</label>
+                </div>
+                <div class="cell">
+                  <img class="thumbnail" src="images\monte o seu\base12.jpg">
+                  <input type="checkbox" id="sixfirstbase" name="base"><label for="sixfirstbase">Hulk Esmaga</label>
+                </div>
+              </div>
+            </div>
+            <br>
+              <div id="estilonome" style="display: none;">
+                <h3 style="text-align: center;">Estilo de Letras</h3>
+                <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras1.jpg">
+                    <select name="base" id="base7">
+                      <option value="0">Redonda Gelatinosa</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Rosa</option>
+                      <option value="5">Roxo</option>
+                      <option value="6">Amarelo</option>
+                      <option value="7">Laranja</option>
+                      <option value="8">Ciano</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras2.png">
+                    <select name="base" id="base8">
+                      <option value="0">Cube Multicolor</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Rosa</option>
+                      <option value="5">Roxo</option>
+                      <option value="6">Amarelo</option>
+                      <option value="7">Laranja</option>
+                      <option value="8">Ciano</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras3.png">
+                    <select name="base" id="base9">
+                      <option value="0">Redonda Black</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Rosa</option>
+                      <option value="5">Roxo</option>
+                      <option value="6">Amarelo</option>
+                      <option value="7">Laranja</option>
+                      <option value="8">Ciano</option>
+                      <option value="9">Branco</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras4.jpg">
+                    <select name="base" id="base10">
+                      <option value="0">Star Multicolor</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Rosa</option>
+                      <option value="4">Roxo</option>
+                      <option value="5">Amarelo</option>
+                      <option value="6">Branco</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras5.jpg">
+                    <select name="base" id="base11">
+                      <option value="0">Night Vision Letters</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Rosa</option>
+                      <option value="4">Roxo</option>
+                      <option value="5">Amarelo</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras6.jfif">
+                    <select name="base" id="base12">
+                      <option value="0">Cube Black</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Rosa</option>
+                      <option value="5">Roxo</option>
+                      <option value="6">Amarelo</option>
+                      <option value="7">Laranja</option>
+                      <option value="8">Ciano</option>
+                      <option value="9">Branco</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras7.png">
+                    <input type="checkbox" id="first2"><label for="first2">Metal Cube</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras8.jpg">
+                    <input type="checkbox" id="second2"><label for="second2">Golden Cube</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras9.jfif">
+                    <input type="checkbox" id="tree2"><label for="tree2">Black Cube</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras10.jfif">
+                    <input type="checkbox" id="for2"><label for="for2">Golden Circle</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras11.jfif">
+                    <input type="checkbox" id="five2"><label for="five2">Simple Cube</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras12.jfif">
+                    <input type="checkbox" id="six2"><label for="six2">Yogurt Circle</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras13.jfif">
+                    <input type="checkbox" id="first3"><label for="first3">Metal Circle</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras14.jfif">
+                    <input type="checkbox" id="second3"><label for="second3">Golden Cube 2</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras15.jfif">
+                    <input type="checkbox" id="tree3"><label for="tree3">Black Cube 2</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras16.jpg">
+                    <input type="checkbox" id="for3"><label for="for3">Wooden Cube</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras17.jpg">
+                    <input type="checkbox" id="five3"><label for="five3">Black Ball</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\letras18.jpg">
+                    <input type="checkbox" id="six3"><label for="six3">Black Circle</label>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div id="auxiliares">
+                <h3 style="text-align: center;">Auxiliares</h3>
+                <div id="gridsize" class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux1.jfif">
+                    <select name="base" id="base13">
+                      <option value="0">Planetas</option>
+                      <option value="1">Terra</option>
+                      <option value="2">Marte</option>
+                      <option value="3">Lua</option>
+                      <option value="4">Júpiter</option>
+                      <option value="5">Saturno</option>
+                      <option value="6">Urano</option>
+                      <option value="7">Netuno</option>
+                      <option value="8">Mercúrio</option>
+                      <option value="9">Venus</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux2.jpg">
+                    <select name="base" id="base14">
+                      <option value="0">Olho Grego</option>
+                      <option value="1">Azul</option>
+                      <option value="2">Verde</option>
+                      <option value="3">Vermelho</option>
+                      <option value="4">Marrom</option>
+                      <option value="5">Laranja</option>
+                      <option value="6">Amarelo</option>
+                      <option value="7">Pele</option>
+                      <option value="8">Preto</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux3.jfif">
+                    <select name="base" id="base15">
+                      <option value="0">Frutas</option>
+                      <option value="1">Laranja</option>
+                      <option value="2">Kiwi</option>
+                      <option value="3">Morango</option>
+                      <option value="4">Dragon Fruit</option>
+                      <option value="5">Uva</option>
+                      <option value="6">Limão</option>
+                      <option value="7">Maça Verde</option>
+                      <option value="8">Maça Azul? WTF</option>
+                      <option value="9">Maça Rosa???</option>
+                      <option value="10">Melancia</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux4.jfif">
+                    <select name="base" id="base16">
+                      <option value="0">Doces</option>
+                      <option value="1">Picolé</option>
+                      <option value="2">Bolo</option>
+                      <option value="3">Pirulito</option>
+                      <option value="4">Cupcake</option>
+                      <option value="5">Beijinho</option>
+                      <option value="6">Caramelo</option>
+                      <option value="7">Balinha</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux5.jfif">
+                    <select name="base" id="base17">
+                      <option value="0">Praia</option>
+                      <option value="1">Guarda Sol</option>
+                      <option value="2">Tartaruga</option>
+                      <option value="3">Peixe</option>
+                      <option value="4">Bola de Vôlei</option>
+                      <option value="5">Boia</option>
+                      <option value="6">Estrela do Mar</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux6.jfif">
+                    <select name="base" id="base18">
+                      <option value="0">Animais</option>
+                      <option value="1">Joaninha</option>
+                      <option value="2">Panda</option>
+                      <option value="3">Sapinho</option>
+                      <option value="4">Gato</option>
+                      <option value="5">Raposa</option>
+                      <option value="6">Porquinho</option>
+                      <option value="7">Cachorro</option>
+                      <option value="8">Coala</option>
+                    </select>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux7.jfif">
+                    <input type="checkbox" id="first4"><label for="first4">Flor Colorida</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux8.jfif">
+                    <input type="checkbox" id="second4"><label for="second4">Coração</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux9.jfif">
+                    <input type="checkbox" id="tree4"><label for="tree4">Estrelinha</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux10.jfif">
+                    <input type="checkbox" id="for4"><label for="for4">Smile Face</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux11.jfif">
+                    <input type="checkbox" id="five4"><label for="five4">Solid Heart</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux12.jfif">
+                    <input type="checkbox" id="six4"><label for="six4">Outline Heart</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux13.jfif">
+                    <input type="checkbox" id="first5"><label for="first5">Flor Colorida</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux14.jpg">
+                    <input type="checkbox" id="second5"><label for="second5">Flor de Tecido</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux15.jpg">
+                    <input type="checkbox" id="tree5"><label for="tree5">Colour Ball</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux16.jfif">
+                    <input type="checkbox" id="for5"><label for="for5">Girassol</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux17.jpg">
+                    <input type="checkbox" id="five5"><label for="five5">Paz e Amor</label>
+                  </div>
+                  <div class="cell">
+                    <img class="thumbnail" src="images\monte o seu\aux18.jpg">
+                    <input type="checkbox" id="six5"><label for="six5">Party Globe</label>
+                  </div>
+                </div>
+              </div>
+              
+            
+          </div>
+          <div class="tabs-panel" id="panel5">
+            <h2>DISPOSIÇÃO DE ELEMENTOS</h2><br>
+            <span style="text-align: justify;">Agora, use sua criatividade para misturar todos os elementos que você selecionou, 
+              e descreva como você deseja cada um deles em sua missanga. Qualquer dúvida que tivermos
+              em relação a como você deseja seu produto, fique atento! Pois te mandaremos um email.
+            </span>
+            <br>
+            <br>
+            <p style="color: grey;">Exemplo: "Minha missanga de possuir um loop dos 3 elementos que eu escolhi: Perólas preta, roxa e azul,
+               com apenas uma missanga do planeta na parte de cima. A palavra deve se repetir duas vezes,
+               uma de cada lado do planeta."</p>
+               <div class="nome">
+                <textarea style="min-height: 100px;" name="" id="" placeholder="Não tenha pressa! Escreva quantas linhas quiser."></textarea>
+                <button class="button expanded">Concluir pedido</button>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <br>
+  <footer class="callout large secondary">
+    <article class="grid-container">
+      <div class="grid-x">
+        <div class="large-4 cell">
+          <h3>Precisa de ajuda?</h3>
+          <p>Entre em contato com o vendedor ou com os desenvolvedores via redes sociais.</p>
+        </div>
+        <div class="large-3 large-offset-1 cell">
+          <h4>Redes sociais da Loja</h4>
+          <div class="social-field">
+            <div class="social-field-media social-field-shopee">
+              <a href="https://shopee.com.br/luvtulipstore">
+                <i class="fab fa-shopify"></i>
+                Acesse pela Shopee
+            </div>
+            <div class="social-field-media social-field-instagram">
+              <a href="https://www.instagram.com/luvtulip_store/">
+                <i class="fab fa-instagram"></i>
+                Acesse pelo Instagram
+              </a>
+            </div>
+            <div class="social-field-media social-field-facebook">
+              <a href="https://www.facebook.com">
+                <i class="fab fa-facebook"></i>
+                Acesse pelo Facebook
+              </a>
+            </div>
+            <div class="social-field-media social-field-wpp">
+              <a href="https://api.whatsapp.com/send?phone=5534999524171&text=Ol%C3%A1!%20Posso%20ajudar%3F">
+                <i class="fab fa-whatsapp"></i>
+                Acesse pelo Whastapp
+              </a>
+            </div>
+          </div>
+        </div>
+        <img src="images/main/logo.jpg" class=logo alt="">
+    </article>
+
+  </footer>
+  <p class="copyright">CopyRight by Capangas do Kpop - 2021</p>
+  <script src="monte o seu.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script>
+    function previewImg() {
+      var img = document.querySelector('input[name=imagem]').files[0];
+      var preview = document.querySelector('img');
+
+      var reader = new FileReader();
+
+      reader.onloadend = function () {
+        preview.src = reader.result;
+      }
+
+      if (img) {
+        reader.readAsDataURL(img);
+      }
+      else {
+        preview.src = "";
+      }
+    }
+  </script>
+</body>
+
+</html>
