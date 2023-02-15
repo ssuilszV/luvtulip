@@ -8,9 +8,9 @@ Henrique @HenriqGitHub: "Login" (Page5) | JavaScript login configuration (passwo
 <br/>
 Paulo @sorahed : Estrutura completa HTML & completa JS | "Reclamações" (Page3)<br />
 <br/>
-# Autores
+# Team
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Guilherme Lima</sub>](https://github.com/guilhermeonrails) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
+| [<img src="https://avatars.githubusercontent.com/u/69050146?s=400&u=d11d8d8b77c22206e355be2b6c8cb4786fcd88d7&v=4" width=115><br><sub>Bruno Ferrari Lacerra (@futoibrunao)</sub>](https://github.com/futoibrunao) |  [<img src="https://avatars.githubusercontent.com/u/94133351?v=4" width=115><br><sub>Louis H(@ssuilszV)</sub>](https://github.com/ssuilszV) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Paulo Victor(@icantstopp)</sub>](https://github.com/icantstopp) |
 | :---: | :---: | :---: |
 ## Objetivo
 
