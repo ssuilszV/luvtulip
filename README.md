@@ -6,7 +6,7 @@ This is a site created by: Bruno Ferrari Lacerra, Henrique Gonçalves, Luis Henr
 | [<img src="https://avatars.githubusercontent.com/u/69050146?v=4" width=115><br><sub>Bruno L. (@futoibrunao)</sub>](https://github.com/futoibrunao) |  
 [<img src="https://avatars.githubusercontent.com/u/94133351?v=4" width=115><br><sub>Louis H.(@ssuilszV)</sub>](https://github.com/ssuilszV) |  
 [<img src="https://avatars.githubusercontent.com/u/68956174?v=4" width=115><br><sub>Paulo V.(@icantstopp)</sub>](https://github.com/icantstopp) |
-[<img src="https://avatars.githubusercontent.com/u/94133872?v=4" width=115><br><sub>Henrique G.(@HenriqGitHub)</sub>](https://github.com/HenriqGithub) |
+[<img src="https://avatars.githubusercontent.com/u/94133872?v=4" width=115><br><sub>Henrique G.(@HenriqGitHub)</sub>](https://github.com/HenriqGithub) 
 | :---: | :---: | :---: |
 ## Objetivo
 
