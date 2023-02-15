@@ -3,8 +3,8 @@ This is a site created by: Bruno Ferrari Lacerra, Henrique Gonçalves, Luis Henr
 
 # Team
 
-| [<img src="https://avatars.githubusercontent.com/u/69050146?v=4" width=100><br><sub>Bruno L. (@futoibrunao)</sub>](https://github.com/futoibrunao) |  [<img src="https://avatars.githubusercontent.com/u/94133351?v=4" width=100><br><sub>Louis H.(@ssuilszV)</sub>](https://github.com/ssuilszV) |  [<img src="https://avatars.githubusercontent.com/u/68956174?v=4" width=100><br><sub>Paulo V.(@icantstopp)</sub>](https://github.com/icantstopp) | 
-[<img src="https://avatars.githubusercontent.com/u/68956174?v=4" width=100><br><sub>Paulo V.(@icantstopp)</sub>](https://github.com/icantstopp) | 
+| [<img src="https://avatars.githubusercontent.com/u/69050146?v=4" width=50><br><sub>Bruno L. (@futoibrunao)</sub>](https://github.com/futoibrunao) |  [<img src="https://avatars.githubusercontent.com/u/94133351?v=4" width=50><br><sub>Louis H.(@ssuilszV)</sub>](https://github.com/ssuilszV) |  [<img src="https://avatars.githubusercontent.com/u/68956174?v=4" width=50><br><sub>Paulo V.(@icantstopp)</sub>](https://github.com/icantstopp) | 
+[<img src="https://avatars.githubusercontent.com/u/68956174?v=4" width=50><br><sub>Paulo V.(@icantstopp)</sub>](https://github.com/icantstopp) | 
 | :---: | :---: | :---: |
 
 ## Objetivo
