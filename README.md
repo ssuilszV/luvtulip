@@ -8,7 +8,7 @@ Henrique @HenriqGitHub: "Login" (Page5) | JavaScript login configuration (passwo
 <br/>
 Paulo @sorahed : Estrutura completa HTML & completa JS | "Reclamações" (Page3)<br />
 <br/>
-<img src="https://avatars.githubusercontent.com/u/69050146?s=400&u=d11d8d8b77c22206e355be2b6c8cb4786fcd88d7&v=4" width=115><br><sub>Bruno Lacerra (@futoibrunao)</sub>>
+<img src="https://avatars.githubusercontent.com/u/69050146?s=400&u=d11d8d8b77c22206e355be2b6c8cb4786fcd88d7&v=4" width=115><br><sub>Bruno Lacerra (@futoibrunao)</sub>
 <br/>
 
 ## Objetivo
